@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="TypingTester.js"></script>
+        <script src="script.js"></script>
+        <style>
+            body {
+                padding: 10px;
+            }
+            #time {
+                height: 100px;
+                width: 200px;
+                text-align: center;
+                font-size: 30px;
+                background-color: antiquewhite;
+            }
+            .ttTest {
+                width: 100%;
+                position: relative;
+            }
+
+            .ttTest .ttInput {
+                width: 90%;
+                height: 100px;
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                line-height: 100px;
+                padding: 0px 10px;
+                border: 2px solid black;
+
+                overflow: hidden;
+                margin-top: 10px;
+            }
+
+            .ttTest .ttText {
+                font-size: 18px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+
+            .ttTest .ttTimer {
+                height: 50px;
+                width: 70px;
+                background-color: black;
+                color: white;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                line-height: 50px;
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            .ttTest .ttCorrect {
+                color: green;
+            }
+            
+            .ttTest .ttWrong {
+                color: red;
+            }
+
+            .ttTest .ttTyping {
+                color: salmon;
+                font-weight: bold;
+            }
+
+            .ttTest .ttSelected {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center">Typing Speed Test</h1>
+        <!-- Container for test elements -->
+        <div id="testContainer">
+
+        </div>
+        <div id="testing"></div>
+
+        <!-- <p id="para"></p>
+        <div id="inp_con">
+            <input type="text" id="usr_inp"> <p id="time"></p>
+        </div> -->
+        <!-- <div>
+            <p id="declare"></p>
+            <table border=2 cellpadding=10 cellspacing=10>
+                <tr>
+                    <th>WPM</th>
+                    <th>Misspled Words</th>
+                </tr>
+                <tr>
+                    <td id="wpm"></td>
+                    <td id="misspellCount"></td>
+                </tr>
+            </table>   
+        </div> -->
+    </body>
+</html>

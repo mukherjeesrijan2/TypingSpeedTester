@@ -22,7 +22,7 @@ class TypingTester {
     // settings
     started = false;
     time = 1 * 60; // in secs
-    currentTime = this.time;
+    currentTime = false;
     inpCaratPos = 0;
     resultCallback = false;
     rateCallback = false;
@@ -277,6 +277,7 @@ class TypingTester {
 
     // start the timer
     timer_start(glob) { // test timer
+        glob.currentTime = glob.time;
         glob.timerInterval = setInterval(function () {
             glob.currentTime -= 1;
             glob.timerDiv.innerText = glob.timify(glob.currentTime);

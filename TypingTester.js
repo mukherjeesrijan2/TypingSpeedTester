@@ -16,7 +16,6 @@ class TypingTester {
     correctWords = [];
     wrongWords = [];
     misspellCount = 0;
-
     charRate = 0;
 
     // settings
@@ -176,10 +175,6 @@ class TypingTester {
             glob.reset(glob);
         }
 
-    }
-
-    updateCaratPos (event, glob) {
-        event.stopPropagation();
     }
 
     focusin (event, glob) {
